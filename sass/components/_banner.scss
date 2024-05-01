@@ -1,0 +1,18 @@
+.banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__img{
+        aspect-ratio: 1/1;
+        width: 50%;
+    }
+    &__content{
+        display: flex;
+        flex-direction: column;
+    }
+    &__title {
+        @include m-h-1();
+        color: $text-white;
+        text-align: center;
+    }
+}

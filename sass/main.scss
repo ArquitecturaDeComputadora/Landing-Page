@@ -16,12 +16,13 @@
     './base/base';
 
 // 4. Layout-related sections
-/* @import
-    ''; */
+@import
+    './layout/header';
 
 // 5. Components
-/* @import
-    ''; */
+@import
+    './components/navbar',
+    './components/banner';
 
 // 6. Page-specific styles
 

@@ -1,13 +1,17 @@
 //Expresiones
-$primary-color: #FFEFE7;
-$secondary-color: #FFDAC6;
-$tertiary-color: #BABD8D;
-$primary-text-color: #7C6A0A;
-$primary-background-color: #FA9500;
-$secundary-background-color: #E86424;
+$primary-color: rgba(22, 39, 91, 1);
+$primary-button-color: rgba(36, 72, 168, 1);
+$text-subtitle: rgba(1, 145, 226, 1);
+$text-black: rgba(0, 0, 0, 1);
+$text-white: rgba(248, 248, 248, 1);
+$text-gray: rgba(77, 77, 77, 1);
+$text-gray-black: rgba(22, 28, 45, 1);
+$imput-bg-selected: rgba(82, 150, 255, 1);
+$input-bg-no-selected: rgba(169, 203, 255, 1);
 
-$text-title: 2.8rem;
-// Mapa
+$padding-general-y: 4rem;
+$padding-general-x: 2rem;
+
 $font-size-desktop: (
     'small-p' : 1.5rem,
     'medium-p' : 2.5rem,
@@ -27,8 +31,4 @@ $breakpoints: (
     'medium': (min-width: 768px),
     'large': (min-width: 1024px),
     'huge': (min-width: 1440px),
-);
-// Lista
-$text-color : (
-    $primary-text-color, $secundary-background-color, $primary-color
 );

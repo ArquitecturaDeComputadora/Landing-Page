@@ -1,37 +1,17 @@
-//MEDIA QUERIES
-//esta forma es basica pero no se puede usar variables
-//en la parte de parentesis
-@mixin HUGE() {
-    @media screen and (min-width: 1024px) {
-        @content;
-    }
-}
-@mixin BIG() {
-    @media screen and (min-width: 768px) {
-        @content;
-    }
-}
-@mixin MEDIUM() {
-    @media screen and (min-width: 320px) {
-        @content;
-    }
-}
 //Gestor De Puntos De Ruptura
 @mixin respond-to($breakpoint) {
     $raw-query: map-get($breakpoints, $breakpoint);
-  
     @if $raw-query {
       $query: if(
         type-of($raw-query) == 'string',
         unquote($raw-query),
         inspect($raw-query)
       );
-  
       @media #{$query} {
         @content;
       }
     } @else {
       @error 'No se ha encontrado un valor para `#{$breakpoint}`. '
-           + 'Por favor, asegúrate que está definido en el mapa `$breakpoints`.';
+            + 'Por favor, asegúrate que está definido en el mapa `$breakpoints`.';
     }
   }
