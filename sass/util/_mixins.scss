@@ -1,0 +1,17 @@
+// MIXIN
+@mixin  subtitle {
+    font-size: map-get($font-size-mobile, subtitle);
+    font-weight: 500;
+    color: nth($text-color, 1);
+}
+@mixin flexbox($direction, $content: null, $align: null) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $content;
+    align-items: $align;
+}
+@mixin font-text($size, $weight: null, $height: null){
+    font-size: $size;
+    font-weight: $weight;
+    line-height: $height;
+}
