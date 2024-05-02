@@ -1,0 +1,16 @@
+.footer{
+    display: flex;
+    flex-direction: column;
+    gap: 7.5rem;
+    @extend .header;
+    color: $text-white;
+    &__content{
+        display: flex;
+        flex-direction: column;
+        gap: 5.2rem;
+    }
+    &__copyright{
+        @include m-body-2();
+        text-align: center;
+    }
+}

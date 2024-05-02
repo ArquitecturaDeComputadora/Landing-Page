@@ -1,0 +1,4 @@
+.main {
+    @extend .header;
+    background-color: $secondary-color;
+}

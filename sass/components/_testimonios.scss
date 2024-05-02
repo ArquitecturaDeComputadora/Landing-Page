@@ -1,0 +1,41 @@
+.testimonios{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.2rem;
+    &__header{
+        @extend .conoce-mas__header;
+    }
+    &__title{
+        @extend .conoce-mas__title;
+    }
+    &__subtitle{
+        @extend .conoce-mas__subtitle;
+    }
+    &__content{
+        display: flex;
+        flex-direction: column;
+        gap: 2.5rem;
+    }
+    &__card{
+        display: flex;
+        flex-direction: column;
+        gap: 0.8rem;
+    }
+    &__person-photo{
+        width: 6rem;
+        object-fit: contain;
+    }
+    &__comment{
+        @include m-h-6();
+        color: $text-gray-black;
+        text-align: justify;
+    }
+    &__person{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @include m-body-2();
+        color: $text-gray-black;
+    }
+}

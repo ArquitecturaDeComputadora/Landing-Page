@@ -2,17 +2,25 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 3rem;
     &__img{
         aspect-ratio: 1/1;
-        width: 50%;
+        width: 100%;
+        max-width: 26rem;
     }
     &__content{
         display: flex;
         flex-direction: column;
+        gap: 2.5rem;
     }
     &__title {
         @include m-h-1();
         color: $text-white;
         text-align: center;
+    }
+    &__button{
+        @extend .buttonAction;
+        max-width: 18rem;
+        margin: 0 auto;
     }
 }

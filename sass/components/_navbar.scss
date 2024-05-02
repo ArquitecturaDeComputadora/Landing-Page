@@ -1,4 +1,13 @@
 .navbar{
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    &__icon-menu{
+        cursor: pointer
+    }
+    &__button{
+        @extend .buttonAction;
+        width: min-content;
+        padding: 1rem 1.5rem;
+    }
 }
